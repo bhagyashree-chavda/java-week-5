@@ -78,11 +78,11 @@ try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
 
 ## 🧠 Summary
 
-✅ Use `FileWriter` for simple text writing
-✅ Use `BufferedWriter` for performance and convenience
-✅ Use `FileWriter("file.txt", true)` to append
-✅ Always close or use try-with-resources
-✅ Use `flush()` to ensure data is written before closing
+- Use `FileWriter` for simple text writing
+- Use `BufferedWriter` for performance and convenience
+- Use `FileWriter("file.txt", true)` to append
+- Always close or use try-with-resources
+- Use `flush()` to ensure data is written before closing
 
 ---
 
@@ -90,10 +90,10 @@ try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
 
 By completing this section, students will:
 
-✅ Write text data using **FileWriter** and **BufferedWriter**
-✅ Append to files without overwriting existing data
-✅ Manage file output efficiently with **flush()** and **close()**
-✅ Safely handle exceptions using **try-with-resources**
-✅ Understand how to generate and save structured output
+- Write text data using **FileWriter** and **BufferedWriter**
+- Append to files without overwriting existing data
+- Manage file output efficiently with **flush()** and **close()**
+- Safely handle exceptions using **try-with-resources**
+- Understand how to generate and save structured output
 
 ---

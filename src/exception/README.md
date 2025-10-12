@@ -27,7 +27,7 @@ This section focuses on how to safely manage file operations, handle errors grac
     * **Locked files**
     * **Unflushed data**
 
-✅ The **best practice** is to use `try-with-resources`.
+- The **best practice** is to use `try-with-resources`.
 
 ---
 
@@ -80,11 +80,11 @@ You can chain exceptions for debugging using `e.initCause()` or handle multiple 
 
 ## 🧠 Summary
 
-✅ Always handle **IOException** and **FileNotFoundException**
-✅ Use **try-with-resources** to prevent leaks
-✅ Provide **useful error messages**
-✅ Log errors for debugging and user communication
-✅ Avoid crashing the program with unhandled exceptions
+- Always handle **IOException** and **FileNotFoundException**
+- Use **try-with-resources** to prevent leaks
+- Provide **useful error messages**
+- Log errors for debugging and user communication
+- Avoid crashing the program with unhandled exceptions
 
 ---
 
@@ -92,11 +92,11 @@ You can chain exceptions for debugging using `e.initCause()` or handle multiple 
 
 By completing this section, students will:
 
-✅ Understand how to handle **IOException** and **FileNotFoundException**
-✅ Use **try-with-resources** to close streams automatically
-✅ Write **clear and meaningful error messages**
-✅ Use **finally blocks** for manual resource cleanup
-✅ Follow **safe and professional file-handling practices**
+- Understand how to handle **IOException** and **FileNotFoundException**
+- Use **try-with-resources** to close streams automatically
+- Write **clear and meaningful error messages**
+- Use **finally blocks** for manual resource cleanup
+- Follow **safe and professional file-handling practices**
 
 ---
 

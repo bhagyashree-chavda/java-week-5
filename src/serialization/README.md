@@ -68,11 +68,11 @@ class Person implements Serializable
 
 ## 🧠 Summary
 
-✅ Serialization saves an object’s state to disk.
-✅ Deserialization restores it.
-✅ Requires `Serializable` interface.
-✅ Use `ObjectOutputStream` and `ObjectInputStream`.
-✅ `transient` fields are skipped.
+- Serialization saves an object’s state to disk.
+- Deserialization restores it.
+- Requires `Serializable` interface.
+- Use `ObjectOutputStream` and `ObjectInputStream`.
+- `transient` fields are skipped.
 
 ---
 
@@ -80,11 +80,11 @@ class Person implements Serializable
 
 By completing this section, students will:
 
-✅ Understand how **serialization** and **deserialization** work
-✅ Use **ObjectOutputStream** and **ObjectInputStream** effectively
-✅ Implement **Serializable** in custom classes
-✅ Handle **transient** fields for security-sensitive data
-✅ Work with **lists of serialized objects** in files
+- Understand how **serialization** and **deserialization** work
+- Use **ObjectOutputStream** and **ObjectInputStream** effectively
+- Implement **Serializable** in custom classes
+- Handle **transient** fields for security-sensitive data
+- Work with **lists of serialized objects** in files
 
 ---
 

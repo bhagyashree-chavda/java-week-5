@@ -85,11 +85,11 @@ catch (IOException e)
 
 ## 🧠 Summary
 
-✅ Use **FileReader** for basic character input.
-✅ Wrap it with **BufferedReader** for efficiency.
-✅ Always handle **FileNotFoundException** and **IOException**.
-✅ Prefer **try-with-resources** to auto-close readers.
-✅ Read **line by line** when working with text data.
+- Use **FileReader** for basic character input.
+- Wrap it with **BufferedReader** for efficiency.
+- Always handle **FileNotFoundException** and **IOException**.
+- Prefer **try-with-resources** to auto-close readers.
+- Read **line by line** when working with text data.
 
 ---
 
@@ -97,11 +97,11 @@ catch (IOException e)
 
 By completing these examples and exercises, students will:
 
-✅ Understand **how to read text files in Java**
-✅ Use **FileReader** and **BufferedReader** effectively
-✅ Handle **I/O exceptions** correctly
-✅ Process file content line by line
-✅ Perform useful text operations like counting, searching, and reversing
+- Understand **how to read text files in Java**
+- Use **FileReader** and **BufferedReader** effectively
+- Handle **I/O exceptions** correctly
+- Process file content line by line
+- Perform useful text operations like counting, searching, and reversing
 
 ---
 
