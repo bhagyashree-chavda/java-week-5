@@ -9,7 +9,8 @@ public class Example2
 {
     public static void main(String[] args)
     {
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("student.ser")))
+        String filename = "resources" + File.separator + "student.ser";
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename)))
         {
             Student s = (Student) in.readObject();
             System.out.println("Deserialized Student:");

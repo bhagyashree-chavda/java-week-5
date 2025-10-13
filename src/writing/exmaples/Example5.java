@@ -8,7 +8,8 @@ public class Example5
 {
     public static void main(String[] args)
     {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("flush_example.txt")))
+        String filePath = "resources" + File.separator + "example.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath)))
         {
             writer.write("This text is written and flushed.");
             writer.flush(); // ensure it's written even before closing

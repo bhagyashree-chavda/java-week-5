@@ -24,7 +24,8 @@ public class Example1
     {
         Student s = new Student("Alice", 22);
 
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("student.ser")))
+        String filename = "resources" + File.separator + "student.ser";
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filename)))
         {
             out.writeObject(s);
             System.out.println("Student object serialized successfully!");

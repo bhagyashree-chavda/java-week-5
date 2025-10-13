@@ -10,7 +10,8 @@ public class Example4
 {
     public static void main(String[] args)
     {
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("employees.ser")))
+        String filePath = "resources" + File.separator + "employees.ser";
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filePath)))
         {
             List<Employee> list = (List<Employee>) in.readObject();
 

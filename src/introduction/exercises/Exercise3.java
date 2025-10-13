@@ -1,6 +1,6 @@
 /**
  * TODO:
- * 1. Create a File object pointing to the current directory (".").
+ * 1. Create a File object pointing to the ("resources") directory.
  * 2. List all files and folders in it.
  * 3. Print each item’s name:
  *      - Add "[DIR]" before folder names.

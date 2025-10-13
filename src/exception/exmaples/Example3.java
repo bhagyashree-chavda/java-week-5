@@ -9,11 +9,12 @@ public class Example3
 {
     public static void main(String[] args)
     {
+        String filePath = "resources" + File.separator + "text.txt";
         BufferedReader reader = null;
 
         try
         {
-            reader = new BufferedReader(new FileReader("text.txt"));
+            reader = new BufferedReader(new FileReader(filePath));
             System.out.println(reader.readLine());
         }
         catch (IOException e)

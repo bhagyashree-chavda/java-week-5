@@ -10,7 +10,8 @@ public class Example1
 {
     public static void main(String[] args)
     {
-        try (BufferedReader reader = new BufferedReader(new FileReader("missing.txt")))
+        String filePath = "resources" + File.separator + "missing.txt";
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath)))
         {
             System.out.println(reader.readLine());
         }

@@ -13,12 +13,13 @@ public class Example4
 {
     public static void main(String[] args)
     {
-        try (FileReader reader = new FileReader("message.txt"))
+        String path = "resources" + File.separator + "message.txt";
+        try (FileReader reader = new FileReader(path))
         {
             int ch;
             while ((ch = reader.read()) != -1)
             {
-                System.out.print((char) ch);
+                System.out.println((char) ch); // convert int to char
             }
         }
         catch (IOException e)

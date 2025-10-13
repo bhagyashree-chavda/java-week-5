@@ -1,6 +1,6 @@
 /**
  * TODO:
- * 1. Create a File object that points to "info.txt".
+ * 1. Create a File object that points to "resources/info.txt".
  * 2. Check if the file exists.
  * 3. If it exists:
  *      - Print its absolute path.

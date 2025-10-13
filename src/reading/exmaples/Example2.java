@@ -9,7 +9,8 @@ public class Example2
 {
     public static void main(String[] args)
     {
-        try (BufferedReader reader = new BufferedReader(new FileReader("message.txt")))
+        String filePath = "resources" + File.separator + "message.txt";
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath)))
         {
             String line;
             while ((line = reader.readLine()) != null)

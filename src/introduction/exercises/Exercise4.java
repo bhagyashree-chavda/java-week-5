@@ -1,6 +1,6 @@
 /**
  * TODO:
- * 1. Create a FileWriter to write into "notes.txt".
+ * 1. Create a FileWriter to write into "resources/notes.txt".
  * 2. Write the following text lines into the file:
  *      - "Java I/O is powerful."
  *      - "Streams make reading and writing easier."

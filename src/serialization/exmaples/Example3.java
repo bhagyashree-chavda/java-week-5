@@ -29,7 +29,8 @@ public class Example3
                 new Employee("Tom", 55000)
         );
 
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("employees.ser")))
+        String filePath = "resources" + File.separator + "employees.ser";
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filePath)))
         {
             out.writeObject(employees);
             System.out.println("Employee list serialized successfully!");

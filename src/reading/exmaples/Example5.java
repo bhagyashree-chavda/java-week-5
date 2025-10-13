@@ -11,8 +11,9 @@ public class Example5
     public static void main(String[] args)
     {
         List<String> students = new ArrayList<>();
+        String filePath = "resources" + File.separator + "students.txt";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("students.txt")))
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath)))
         {
             String line;
             while ((line = reader.readLine()) != null)

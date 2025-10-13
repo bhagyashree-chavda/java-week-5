@@ -9,7 +9,8 @@ public class Example3
 {
     public static void main(String[] args)
     {
-        try (FileWriter writer = new FileWriter("log.txt", true))
+        String filePath = "resources" + File.separator + "log.txt";
+        try (FileWriter writer = new FileWriter(filePath, true))
         {
             writer.write("New log entry: Application started.\n");
             System.out.println("Data appended successfully.");

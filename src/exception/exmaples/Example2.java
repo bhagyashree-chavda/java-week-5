@@ -10,7 +10,8 @@ public class Example2
 {
     public static void main(String[] args)
     {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt")))
+        String filePath = "resources" + File.separator + "output.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath)))
         {
             writer.write("Learning exception handling in Java I/O!");
             System.out.println("File written successfully.");

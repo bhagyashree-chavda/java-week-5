@@ -7,29 +7,32 @@
 
 package introduction.exmaples;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 
 public class Example2
 {
     public static void main(String[] args)
     {
-        File file = new File("data.txt");
-
+        // Define a safe, OS-independent file path
+        String path = "resources" + File.separator + "data.txt";
+        File file = new File(path);
         try
         {
+            // Try to create the file
             if (file.createNewFile())
             {
-                System.out.println("File created: " + file.getAbsolutePath());
+                System.out.println("File created successfully!");
+                System.out.println("Location: " + file.getAbsolutePath());
             }
             else
             {
-                System.out.println("File already exists.");
+                System.out.println("File already exists at: " + file.getAbsolutePath());
             }
         }
         catch (IOException e)
         {
-            System.out.println("An error occurred while creating the file.");
-            e.printStackTrace();
+            System.out.println("Error creating file: " + e.getMessage());
         }
     }
 }

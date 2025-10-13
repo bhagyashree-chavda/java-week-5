@@ -9,9 +9,10 @@ public class Example3
 {
     public static void main(String[] args)
     {
+        String filePath = "resources" + File.separator + "notes.txt";
         int count = 0;
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("notes.txt")))
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath)))
         {
             while (reader.readLine() != null)
             {

@@ -9,7 +9,8 @@ public class Example1
 {
     public static void main(String[] args)
     {
-        try (FileWriter writer = new FileWriter("hello.txt"))
+        String filePath = "resources" + File.separator + "hello.txt" ;
+        try (FileWriter writer = new FileWriter(filePath))
         {
             writer.write("Hello, Java!\n");
             writer.write("Writing to files is fun!");

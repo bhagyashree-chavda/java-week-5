@@ -9,7 +9,8 @@ public class Example2
 {
     public static void main(String[] args)
     {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("lines.txt")))
+        String filePath = "resources" + File.separator + "lines.txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath)))
         {
             writer.write("First line of text");
             writer.newLine();

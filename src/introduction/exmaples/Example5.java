@@ -12,7 +12,8 @@ public class Example5
 {
     public static void main(String[] args)
     {
-        try (FileWriter writer = new FileWriter("output.txt"))
+        String path = "resources" + File.separator + "output.txt";
+        try (FileWriter writer = new FileWriter(path))
         {
             writer.write("Hello, Java!\n");
             writer.write("File I/O is easy to learn.");

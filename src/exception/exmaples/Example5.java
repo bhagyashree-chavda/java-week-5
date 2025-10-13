@@ -10,7 +10,8 @@ public class Example5
 {
     public static void main(String[] args)
     {
-        File file = new File("data.txt");
+        String filePath = "resources" + File.separator + "data.txt";
+        File file = new File(filePath);
 
         try (FileReader reader = new FileReader(file))
         {

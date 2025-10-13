@@ -21,9 +21,10 @@ public class Example5
 {
     public static void main(String[] args)
     {
+        String filePath = "resources" + File.separator + "account.ser";
         Account acc = new Account("user1", "mySecretPassword");
 
-        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("account.ser")))
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(filePath)))
         {
             out.writeObject(acc);
             System.out.println("Account serialized!");
@@ -34,7 +35,7 @@ public class Example5
         }
 
         // Deserialize
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("account.ser")))
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream( filePath)))
         {
             Account restored = (Account) in.readObject();
             System.out.println("Deserialized Account:");

@@ -13,8 +13,9 @@ public class Example6
 {
     public static void main(String[] args)
     {
-        try (FileInputStream input = new FileInputStream("source.txt");
-             FileOutputStream output = new FileOutputStream("copy.txt"))
+        String dir = "resources" + File.separator;
+        try (FileInputStream input = new FileInputStream(dir + "cat.jpg");
+             FileOutputStream output = new FileOutputStream(dir + "copy.jpg"))
         {
             int byteData;
             while ((byteData = input.read()) != -1)
