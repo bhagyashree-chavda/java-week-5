@@ -23,8 +23,7 @@ class User implements Serializable
 
 public class Exercise3
 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws FileNotFoundException {
         // Implement here
         String filePath = "resources" +File.separator + "user.ser";
         User user = new User("Bhagyashree " , "password");
@@ -39,5 +38,14 @@ public class Exercise3
         }
 
         //deserialization
+        try(ObjectInputStream in = new ObjectInputStream(new FileInputStream(filePath)))
+        {
+            User restored = (User) in.readObject();
+            System.out.println("User deserialized");
+            System.out.println("Username: " + restored.username);
+            System.out.println("Password: " + restored.password);
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
