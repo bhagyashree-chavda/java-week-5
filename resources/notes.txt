@@ -1,0 +1,9 @@
+✅ IOException & FileNotFoundException → Caught in try-catch blocks
+
+✅ Try-with-resources → Used for reading config.properties
+
+✅ Meaningful error messages → Every catch prints clear info
+
+✅ Finally block → Manual cleanup of BufferedReader & PrintWriter
+
+✅ Safe & professional file handling → Existence check, append mode, resource cleanup

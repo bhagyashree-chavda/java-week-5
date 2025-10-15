@@ -6,18 +6,6 @@ package serialization.exmaples;
 
 import java.io.*;
 
-class Student implements Serializable
-{
-    String name;
-    int age;
-
-    Student(String name, int age)
-    {
-        this.name = name;
-        this.age = age;
-    }
-}
-
 public class Example1
 {
     public static void main(String[] args)

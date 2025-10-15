@@ -12,7 +12,7 @@ public class Example3
 {
     public static void main(String[] args)
     {
-        File folder = new File(".");
+        File folder = new File("resources");
 
         File[] files = folder.listFiles();
 
